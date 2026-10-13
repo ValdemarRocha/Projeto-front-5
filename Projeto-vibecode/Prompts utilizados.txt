@@ -1,0 +1,71 @@
+Os seguintes prompts foram utilizados para produzir o projeto em sintonia com a IA Claude code, na versão grátis;
+
+Configurações utilizadas no claude: Sonnet 5.5 com desempenho alto
+
+O tema escolhido foi um site de letras de músicas (Estilo anos 2000), pois é algo esteticamente marcante para mim, pois admirava bastante este tipo de site, além de parecer um desenvolvimento interessante de se produzir.
+
+Prompt inicial:
+Olá Claude, gostaria de produzir um projeto em html como você como vibecoding. O tema será "Site de músicas", seu nome será musiletras. Ele irá funcionar como o site vagalume.com, com um vídeo do youtube passando do lado direito da tela e, do lado esquerdo, a letra do que está sendo passado no vídeo. Gere para mim um index.html de uma página inicial e nessa página inclua: Uma div com a logo do site, um botão de músicas e um botão de contato; No body da página, inclua um link para uma página musica.html; Não precisa exagerar muito nos elementos visuais nem elementos funcionais na página, apenas comece com estes elementos ditos na página inicial.
+
+O prompt gerou somente um html puro, com elementos de button e div. Porém, não criou um css separado. Ele incluiu o style diretamente na página html, então pedi para separar da página.
+
+Prompt de correção 1:
+Gere o css em um style.css separado, por favor.
+
+A mudança gerou o html e o style.css em arquivos separados.
+
+Prompt de correção 2:
+Obrigado. Agora, no css, organize as divs para os elementos da class "topo", fiquem centralizados. Também crie, um html das páginas "músicas" e "contato", para desenvolvermos depois.
+
+Criando agora as páginas onde ficarão as letras:
+
+prompt 1:
+Agora em músicas.html:
+Deixe as divs iguais às da página inicial, com a diferença que o botão de músicas vai levar à pagina inicial;
+No escopo da página, gere dois links, um para a página da música "Boulevard of Broken dreams" e um para a música "Californication"
+
+prompt 2:
+Agora, gere dois arquivos, onde cada link de musicas.html levará: "boulevard of broken dreams" levará para musica1.html; "Californication" levará para musica2.html. Os elementos das duas páginas serão praticamente iguais, além de ter a div padrão, porém, quero que inclua também 3 links em vez de dois. No caso, a div vai ficar: "Página inicial", "musicas" e "contato". Gere também um css diferente para a página de músicas, com o nome: stylemusicas.css. Faça um css básico nela.
+
+O prompt gerou as duas páginas, com a letra a ser incluída e o link do youtube a ser incluído no vídeo. Agora, para gerar mais um elemento nas páginas de música, resolvi incluir o seguinte prompt:
+
+prompt para gerar a lista de musicas:
+Agora, tanto em musica1.html quanto para musica2.html, quero que adicione os seguintes elementos:
+1 botão de "letra original", que será a letra original que irá aparecer primeiro ao carregar a página
+1 botão de "tradução", onde ao clicar nele, irá mudar o texto da letra para outra cadeia de texto.
+uma área abaixo de onde vai aparecer o vídeo da música. Nessa área, deve ter:
+uma imagem; Abaixo da imagem, o nome da banda. Abaixo do nome da banda, um pequeno texto com o ano de produção da música e de qual álbum da banda ela faz parte.
+A organização da tela ficará dividida em três seções:
+lado esquerdo: Botões de "letra original" e "Tradução"
+meio: Área da letra da música
+Lado direito: Video do youtube tocando e abaixo do vídeo, a área de informações. musica1.html terá informações da banda Green day e de sua música "Boulevard of broken dreams". musica2.html terá informações da banda Red Hot Chili Peppers e de sua música "Californication".
+
+Este prompt, gerou o html das páginas com a mecânica de trocar as músicas, em javascript. Como eu queria que o html fosse somente um html puro, resolvi pedir para o Claude criar um javascript separado, que irá servir para funcionar a troca de letras:
+
+Prompt do javascript:
+Obrigado. Gostaria que o javascript fosse separado dos dois html em um só, para que a mecânica fosse utilizada compartilhada entre os html
+
+Este prompt gerou o arquivo scriptmusicas.js, onde vai funcionar o botão de alterar a letra da musica
+
+prompt de correção:
+Realize o teste do projeto. Analise os erros e corrija-os para mim
+
+Este prompt resolveu o problema de estilo que as páginas musica1.html e musica2.html não estavam funcionando da maneira correta.
+
+Neste ponto, meus conhecimentos de html que domino foram completamente utilizados. Então, resolvi aprender e pedir para o Claude personalizar o site conforme ele gostaria, para testar a originalidade da IA.
+Pedi para ele incluir a funcionalidade de aparecer um vídeo do youtube na página da letra das músicas e também pedi para criar uma página de review, utilizando bootstrap, inspirado na aula de bootstrap que tive anteriormente.
+Também, pedi para que, nas páginas de música, tivesse uma imagem do álbum borrada como background no body da página, para colocar o bootstrap em prática neste projeto.
+
+Prompt para estas mudanças:
+Obrigado. Agora, faça uma funcionalidade onde, ao incluir o link do vídeo no texto, ele apareça como extensão do próprio youtube, mostrando o videoclipe disponível na plataforma.
+
+Também gostaria que, baseado neste anexo [projeto de bootstrap], crie uma seção de "reviews" na página inicial, com setinhas para mostrar diferentes análises dos usuários. Esta seção deve ter:
+A nota em estrelas
+as imagens utilizadas no projeto original
+uma seção de texto, simulando os comentários dos usuários sobre o site.
+Por último, na parte de musica1.html e musica2.html, inclua um background da imagem da capa, modificado para ficar borrado, para servir de background na página.
+
+O Claude então, gerou um zip com as mudanças pedidas, funcionando e deixando como foi pedido.
+
+Com esta última mudança, o projeto teve sua versão final. Senti que podia mudar algo mais no design do site, mas acabei não fazendo, por falta de ideias. Posso também ter usado conceitos muito mais avançados que os apresentados na aula, mas o intuito que era o vibecode, se manteve; Gostei muito de explorar o desenvolvimento mutualmente com a IA, em vez de simplesmente gerar um único prompt. Mostra que, uma boa utilização da IA, gera um resultado profissional se feito de boa maneira.
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boulevard of Broken Dreams – musiletras</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/stylemusicas.css">
+</head>
+<body>
+
+  <div class="fundo-capa" style="background-image: url('img/greenday.jpg');" aria-hidden="true"></div>
+
+  <div class="topo">
+    <div class="logo">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3v11.3A3.5 3.5 0 1 0 11 17.5V8h8V3H9z"/></svg>
+      musiletras
+    </div>
+
+    <nav class="menu" aria-label="Menu principal">
+      <a class="botao" href="index.html">Página inicial</a>
+      <a class="botao principal" href="musicas.html">Músicas</a>
+      <a class="botao" href="contato.html">Contato</a>
+    </nav>
+  </div>
+
+  <main>
+    <h1>Boulevard of Broken Dreams</h1>
+    <p class="artista">Green Day</p>
+
+    <div class="conteudo">
+
+      <!-- Esquerda: botões da letra -->
+      <div class="lado-esquerdo" role="group" aria-label="Versão da letra">
+        <button type="button" class="botao-letra ativo" id="btn-original" aria-pressed="true">Letra original</button>
+        <button type="button" class="botao-letra" id="btn-traducao" aria-pressed="false">Tradução</button>
+      </div>
+
+      <!-- Meio: letra da música -->
+      <section class="letra" aria-label="Letra da música">
+        <!-- Cole a letra original dentro do parágrafo abaixo -->
+        <p id="letra-original">I walk a lonely road
+                The only one that I have ever known
+                Don't know where it goes
+                But it's home to me and I walk alone
+
+                I walk this empty street
+                On the boulevard of broken dreams
+                Where the city sleeps
+                And I'm the only one and I walk alone
+                I walk alone I walk alone
+                I walk alone I walk a....
+
+                {Chorus}
+                My shadow's the only one that walks beside me
+                My shallow heart is the only thing that's beating
+                Sometimes I wish someone out there will find me
+                Till then I walk alone
+                ah - ah - ah - ah - ah - ah -aaah - ah - ah -ah -ah</p>
+        <!-- Cole a tradução dentro do parágrafo abaixo -->
+        <p id="letra-traducao" hidden>Eu ando em uma estrada solitária
+                A única que eu sempre conheci
+                Não sei até onde vai
+                Mas é lar para mim e eu ando só
+
+                Eu ando nessa rua vazia
+                Na alameda dos sonhos despedaçados
+                Onde a cidade dorme
+                E eu sou o único e eu ando sozinho
+                Eu ando sozinho, Eu ando sozinho
+                Eu ando sozinho, Eu ando sozinho
+
+                {Refrão}
+                Minha sombra é a única que anda do meu lado
+                Meu coração superficial é a única coisa que está batendo
+                Às vezes eu desejo que alguém por aí me encontre
+                Até lá, eu andarei só
+                ah - ah - ah - ah - ah - ah -aaah - ah - ah -ah -ah</p>
+      </section>
+
+      <!-- Direita: vídeo e informações da banda -->
+      <div class="lado-direito">
+        <section class="video" aria-label="Vídeo da música">
+          <div class="quadro-video" data-video="https://www.youtube.com/watch?v=Soa3gO7tL-c" data-titulo="Boulevard of Broken Dreams">
+            <!-- Cole o link do YouTube em data-video, por exemplo:
+                 data-video="https://www.youtube.com/watch?v=ID_DO_VIDEO" -->
+            <span>O vídeo do YouTube vai aparecer aqui.</span>
+          </div>
+        </section>
+
+        <section class="info" aria-label="Informações da banda">
+          <!-- Imagem da banda (arquivo na pasta img) -->
+          <img src="img/greenday.jpg" alt="Imagem da banda Green Day">
+          <p class="banda">Green Day</p>
+          <p class="detalhe">Lançada em 2004, faz parte do álbum American Idiot.</p>
+        </section>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="script/scriptmusicas.js"></script>
+
+</body>
+</html>

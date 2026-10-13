@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Californication – musiletras</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/stylemusicas.css">
+</head>
+<body>
+
+  <div class="fundo-capa" style="background-image: url('img/redhot.jpg');" aria-hidden="true"></div>
+
+  <div class="topo">
+    <div class="logo">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3v11.3A3.5 3.5 0 1 0 11 17.5V8h8V3H9z"/></svg>
+      musiletras
+    </div>
+
+    <nav class="menu" aria-label="Menu principal">
+      <a class="botao" href="index.html">Página inicial</a>
+      <a class="botao principal" href="musicas.html">Músicas</a>
+      <a class="botao" href="contato.html">Contato</a>
+    </nav>
+  </div>
+
+  <main>
+    <h1>Californication</h1>
+    <p class="artista">Red Hot Chili Peppers</p>
+
+    <div class="conteudo">
+
+      <!-- Esquerda: botões da letra -->
+      <div class="lado-esquerdo" role="group" aria-label="Versão da letra">
+        <button type="button" class="botao-letra ativo" id="btn-original" aria-pressed="true">Letra original</button>
+        <button type="button" class="botao-letra" id="btn-traducao" aria-pressed="false">Tradução</button>
+      </div>
+
+      <!-- Meio: letra da música -->
+      <section class="letra" aria-label="Letra da música">
+        <!-- Cole a letra original dentro do parágrafo abaixo -->
+                <p id="letra-original">
+                Psychic spies from China
+                Try to steal your mind's elation
+                Little girls from Sweden
+                Dream of silver screen quotations
+                And if you want these kind of dreams
+                It's Californication
+
+                It's the edge of the world
+                And all of western civilization
+                The sun may rise in the east
+                At least it settles in a final location
+                It's understood that Hollywood
+                Sells Californication
+
+                Pay your surgeon very well
+                To break the spell of aging
+                Celebrity skin, is this your chin
+                Or is it war your waging
+
+                The first born unicorn
+                Hard core soft porn
+                Dream of Californication
+                Dream of Californication
+        </p>
+        <!-- Cole a tradução dentro do parágrafo abaixo -->
+        <p id="letra-traducao" hidden>
+                Espiões médiuns da China
+                Tentam roubar o júbilo de sua mente
+                Garotinhas da Suécia
+                Sonham com trechos da tela prateada
+                E se você quer esses tipos de sonhos
+                É a Californicação
+
+                Esta é a beira do mundo
+                E de toda a civilização ocidental
+                O sol pode nascer no leste
+                Pelo menos ele se põe num local final
+                Entende-se que Hollywood
+                Vende Californicação
+
+                Pague muito bem seu cirurgião
+                Para quebrar o feitiço do envelhecimento
+                Pele de celebridade, este é seu queixo mesmo?
+                Ou é uma guerra que você está travando
+
+                Primeiro unicórnio nascido
+                Suave pornô explícito
+                Sonho de Californicação
+                Sonho de Californicação
+        </p>
+      </section>
+
+      <!-- Direita: vídeo e informações da banda -->
+      <div class="lado-direito">
+        <section class="video" aria-label="Vídeo da música">
+          <div class="quadro-video" data-video="https://www.youtube.com/watch?v=YlUKcNNmywk" data-titulo="Californication">
+            <!-- Cole o link do YouTube em data-video, por exemplo:
+                 data-video="https://www.youtube.com/watch?v=ID_DO_VIDEO" -->
+            <span>O vídeo do YouTube vai aparecer aqui.</span>
+          </div>
+        </section>
+
+        <section class="info" aria-label="Informações da banda">
+          <!-- Imagem da banda (arquivo na pasta img) -->
+          <img src="img/redhot.jpg" alt="Imagem da banda Red Hot Chili Peppers">
+          <p class="banda">Red Hot Chili Peppers</p>
+          <p class="detalhe">Lançada em 1999, faz parte do álbum Californication.</p>
+        </section>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="script/scriptmusicas.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+* {
+    background-color: blueviolet;
+}
+
+div p {
+    font-style: italic;
+}
+
+div a {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.btnsolucoes {
+    color: white;
+}
+
+.btnqueroconhecer {
+    color: white;
+    border-color: blueviolet;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+}

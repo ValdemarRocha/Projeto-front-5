@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>musiletras – letras de músicas com vídeo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Topo do site: logo e botões de navegação -->
+  <div class="topo">
+    <div class="logo">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3v11.3A3.5 3.5 0 1 0 11 17.5V8h8V3H9z"/></svg>
+      musiletras
+    </div>
+
+    <nav class="menu" aria-label="Menu principal">
+      <a class="botao principal" href="musicas.html">Músicas</a>
+      <a class="botao" href="contato.html">Contato</a>
+    </nav>
+  </div>
+
+  <main>
+    <h1>Veja o vídeo e acompanhe a letra.</h1>
+    <p>No musiletras, o clipe toca de um lado e a letra da música aparece do outro.</p>
+
+    <!-- Link para a página da música -->
+    <a class="link-musica" href="musicas.html">Abrir a página de uma música</a>
+  </main>
+
+  <!-- Reviews: depoimentos simulados para demonstração -->
+  <section class="reviews" aria-labelledby="titulo-reviews">
+    <h2 id="titulo-reviews">O que dizem nossos usuários</h2>
+
+    <div class="carrossel" role="region" aria-roledescription="carrossel" aria-label="Avaliações dos usuários">
+      <button type="button" class="seta" id="review-anterior" aria-label="Avaliação anterior">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+      </button>
+
+      <div class="review-lista">
+        <article class="review">
+          <img src="img/assinante1.png" alt="Walter White, assinante desde 2008">
+          <p class="estrelas" role="img" aria-label="Nota 4 de 5"><span class="cheia">★★★★</span><span class="vazia">★</span></p>
+          <p class="review-texto">Gosto de assistir ao clipe com a letra ao lado: dá para acompanhar cada verso sem pausar o vídeo. Só sinto falta de mais músicas no catálogo.</p>
+        </article>
+
+        <article class="review" hidden>
+          <img src="img/assinante2.png" alt="Jesse Pinkman, assinante desde 2010">
+          <p class="estrelas" role="img" aria-label="Nota 5 de 5"><span class="cheia">★★★★★</span></p>
+          <p class="review-texto">A tradução em um clique é o que eu mais uso. Troco entre a letra original e o português sem sair da página.</p>
+        </article>
+
+        <article class="review" hidden>
+          <img src="img/assinante3.png" alt="Gus Fring, assinante desde 2012">
+          <p class="estrelas" role="img" aria-label="Nota 5 de 5"><span class="cheia">★★★★★</span></p>
+          <p class="review-texto">Site limpo, rápido e fácil de navegar. Do jeito que uma página de letras deveria ser.</p>
+        </article>
+      </div>
+
+      <button type="button" class="seta" id="review-proximo" aria-label="Próxima avaliação">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+
+    <p class="review-contador" id="review-contador" aria-live="polite">1 de 3</p>
+  </section>
+
+  <script src="script/reviews.js"></script>
+
+</body>
+</html>
